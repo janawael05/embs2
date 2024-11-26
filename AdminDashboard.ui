@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>AdminDashboard</class>
+ <widget class="QDialog" name="AdminDashboard">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1129</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>AdminDashboard</string>
+  </property>
+  <widget class="QLabel" name="AdminDashboardLabel">
+   <property name="geometry">
+    <rect>
+     <x>320</x>
+     <y>60</y>
+     <width>191</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 700 14pt &quot;Arial&quot;;</string>
+   </property>
+   <property name="text">
+    <string>Admin Dashboard</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignmentFlag::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QTableWidget" name="eventsTable">
+   <property name="geometry">
+    <rect>
+     <x>110</x>
+     <y>140</y>
+     <width>661</width>
+     <height>281</height>
+    </rect>
+   </property>
+   <row>
+    <property name="text">
+     <string>0</string>
+    </property>
+   </row>
+   <row>
+    <property name="text">
+     <string>1</string>
+    </property>
+   </row>
+   <row>
+    <property name="text">
+     <string>2</string>
+    </property>
+   </row>
+   <row>
+    <property name="text">
+     <string>3</string>
+    </property>
+   </row>
+   <row>
+    <property name="text">
+     <string>4</string>
+    </property>
+   </row>
+   <row>
+    <property name="text">
+     <string>5</string>
+    </property>
+   </row>
+   <row>
+    <property name="text">
+     <string>6</string>
+    </property>
+   </row>
+   <row>
+    <property name="text">
+     <string>7</string>
+    </property>
+   </row>
+   <row>
+    <property name="text">
+     <string>8</string>
+    </property>
+   </row>
+   <row>
+    <property name="text">
+     <string>New Row</string>
+    </property>
+   </row>
+   <row>
+    <property name="text">
+     <string>10</string>
+    </property>
+   </row>
+   <column>
+    <property name="text">
+     <string>Event Name</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Description</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Date</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Location</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Ticket Price</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Seats Available</string>
+    </property>
+   </column>
+  </widget>
+  <widget class="QPushButton" name="AddorEditEventButton">
+   <property name="geometry">
+    <rect>
+     <x>180</x>
+     <y>430</y>
+     <width>121</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Add or Edit Event</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="deleteEventButton">
+   <property name="geometry">
+    <rect>
+     <x>340</x>
+     <y>430</y>
+     <width>100</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Delete Event</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="searchEventsLineEdit">
+   <property name="geometry">
+    <rect>
+     <x>580</x>
+     <y>110</y>
+     <width>113</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Search Events...</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="selectCategoryComboBox">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>110</y>
+     <width>141</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <item>
+    <property name="text">
+     <string>Select Category</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Concert</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Conference</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Workshop</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Social Gathering</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QComboBox" name="selectLocationComboBox">
+   <property name="geometry">
+    <rect>
+     <x>280</x>
+     <y>110</y>
+     <width>141</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <item>
+    <property name="text">
+     <string>Select Location</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>City Hall</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Tech Center</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Convention Center</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QDateEdit" name="selectDate">
+   <property name="geometry">
+    <rect>
+     <x>440</x>
+     <y>110</y>
+     <width>110</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="returnbackpushbutton">
+   <property name="geometry">
+    <rect>
+     <x>640</x>
+     <y>500</y>
+     <width>83</width>
+     <height>29</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>return back</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
